@@ -13,60 +13,62 @@ if __name__ == '__main__':
     # a dictionary tracking unspent transaction outputs
     utxos = {}  # type: Dict[str, TransactionOutput]
     minimum_transaction = 0.1
-    difficulty = 2
+    difficulty = 1
 
     blockchain = BlockChain(difficulty)
 
     wallet_one = Wallet("1",utxos)
     wallet_two = Wallet("2",utxos)
 
-    wallet_coinbase = Wallet("base",utxos)
+    wallet_coinbase = Wallet("coinbase",utxos)
 
     # create genesis transaction, which sends 100 coins to wallet_one
     genesis_transaction = get_genesis_transaction(wallet_coinbase, wallet_one, 100, utxos)
-
     print("Creating and mining genesis block")
-    genesis = Block("genesis","0")
+    genesis = Block("0")
     genesis.add_transaction(genesis_transaction, utxos, minimum_transaction)
+    print("Wallet one balance: %d" % wallet_one.get_balance())
+
 
     blockchain.append_block(genesis)
-
-    # testing
-    print("Wallet one balance: %d" % wallet_one.get_balance())
+    print("Genesis Block")
+    genesis.print()
 
     print()
     print("Attemping to send funds (40) to Wallet two")
-    block1 = Block("1",genesis.hash)
+    block1 = Block(genesis.hash)
     block1.add_transaction(wallet_one.send_funds(wallet_two.public_key_as_str(), 40), utxos, minimum_transaction)
-    blockchain.append_block(block1)
     print("Wallet one balance: %d" % wallet_one.get_balance())
     print("Wallet two balance: %d" % wallet_two.get_balance())
 
-    print()
+    print("Wallet two is attempting to send funds (20) to wallet one")
+    block1.add_transaction(wallet_two.send_funds(wallet_one.public_key_as_str(), 20), utxos, minimum_transaction)
+    print("Wallet one balance: %d" % wallet_one.get_balance())
+    print("Wallet two balance: %d" % wallet_two.get_balance())
+
+    blockchain.append_block(block1)
     print("Block 1")
     block1.print()
 
+    print("is chain valid?", blockchain.check_valid(genesis_transaction))
+
     print()
-    print("Attempting to send more funds (1000) than it has")
-    block2 = Block("2",block1.hash)
-    block2.add_transaction(wallet_one.send_funds(wallet_two.public_key_as_str(), 1000), utxos, minimum_transaction)
-    blockchain.append_block(block2)
+
+    block2 = Block(block1.hash)
+    print("Wallet one is attempting to send funds (30) to wallet two")
+    block2.add_transaction(wallet_one.send_funds(wallet_two.public_key_as_str(), 30), utxos, minimum_transaction)
     print("Wallet one balance: %d" % wallet_one.get_balance())
     print("Wallet two balance: %d" % wallet_two.get_balance())
 
     print()
+    print("Wallet two is attempting to send funds (15) to wallet one")
+    block2.add_transaction(wallet_two.send_funds(wallet_one.public_key_as_str(), 15), utxos, minimum_transaction)
+    print("Wallet one balance: %d" % wallet_one.get_balance())
+    print("Wallet two balance: %d" % wallet_two.get_balance())
+
+    blockchain.append_block(block2)
     print("Block 2")
     block2.print()
 
-    print("Wallet two is attempting to send funds (20) to wallet one")
-    block3 = Block("3",block2.hash)
-    block3.add_transaction(wallet_two.send_funds(wallet_one.public_key_as_str(), 20), utxos, minimum_transaction)
-    blockchain.append_block(block3)
-    print("Wallet one balance: %d" % wallet_one.get_balance())
-    print("Wallet two balance: %d" % wallet_two.get_balance())
-
-    print()
-    print("Block 3")
-    block3.print()
-
     print("is chain valid?", blockchain.check_valid(genesis_transaction))
+

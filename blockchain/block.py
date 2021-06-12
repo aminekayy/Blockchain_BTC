@@ -5,13 +5,14 @@ from crypto.utils import merkle_root
 
 class Block:
 
-    def __init__(self, previous_hash):
+    def __init__(self,name, previous_hash):
 
         self.previous_hash = previous_hash
         self.nonce = 0
         self.timestamp = datetime.now().timestamp()
         self.transactions = []
         self.hash = self.calculate_hash()
+        self.name = 'block {}'.format(name)
 
     def get_message(self):
         return self.previous_hash + str(self.nonce) + str(self.timestamp) + self.get_merkle_root()

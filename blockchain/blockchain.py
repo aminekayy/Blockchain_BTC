@@ -81,7 +81,6 @@ class BlockChain:
                     return False
 
                 i += 1
-
         return True
 
     def last_block_hash(self):

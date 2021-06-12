@@ -7,7 +7,7 @@ from Crypto.PublicKey.RSA import RsaKey
 
 class Wallet:
 
-    def __init__(self, all_utxos: Dict[str, TransactionOutput]):
+    def __init__(self,name ,all_utxos: Dict[str, TransactionOutput]):
         self.public_key = None  # type: RsaKey
         self.private_key = None  # type: RsaKey
 
@@ -15,6 +15,7 @@ class Wallet:
         self.all_utxos = all_utxos
 
         self.generate_key_pair()
+        self.name = 'wallet {}'.format(name)
 
     def generate_key_pair(self):
         self.public_key, self.private_key = new_keys(2048)
@@ -52,11 +53,11 @@ class Wallet:
 
         if self.get_balance() < value:
             print("Not enough balance, transaction discarded")
-            return
+            return False
 
         if value <= 0:
             print("Value should be positive, transaction discarded")
-            return
+            return False
 
         inputs = []
         total = 0
