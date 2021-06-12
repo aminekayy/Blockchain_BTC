@@ -1,3 +1,5 @@
 .idea
 venv
 */__pycache__/*
+db_init.py
+main2.py
