@@ -1,5 +1,5 @@
-.idea
-venv
-*/__pycache__/*
 db_init.py
 main2.py
+blockchain\__pycache__
+crypto\__pycache__
+.idea
