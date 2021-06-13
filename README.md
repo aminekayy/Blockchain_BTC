@@ -31,7 +31,9 @@ Here is the link of the medium article:(https://medium.com/programmers-blockchai
 ### Credits
 - Mohamed Amine AJINOU
 - Karim HABOUCH
+
 Mentors: Meryem AYACHE, Amjad GAWANMEH 
 
 INPT Rabat School | Major: Cybersecurity & Digital Trust Engineering
+
 ©PFA June 2021
