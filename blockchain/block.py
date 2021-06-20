@@ -1,9 +1,15 @@
 from datetime import datetime
 from crypto.utils import sha256
 from crypto.utils import merkle_root
+import minidb
 
-
-class Block:
+class Block(minidb.Model):
+    previous_hash = str
+    nonce = int
+    timestamp = str
+    transactions = list
+    hash = str
+    name = str
 
     def __init__(self,name, previous_hash):
 

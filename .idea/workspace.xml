@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6899aee-610e-4ffc-9bb9-9bcb524cc3f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/db_init.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/block.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/block.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/blockchain.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/blockchain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/wallet.py" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/wallet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main3.py" beforeDir="false" afterPath="$PROJECT_DIR$/main3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +158,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1623405257584</updated>
-      <workItem from="1623405317278" duration="18398000" />
+      <workItem from="1623405317278" duration="19150000" />
+      <workItem from="1624128074489" duration="3530000" />
     </task>
     <servers />
   </component>
@@ -178,48 +176,53 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623405559499">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1623405559499" />
-    <state width="1323" height="400" key="GridCell.Tab.0.bottom" timestamp="1623428755693">
+    <state width="1323" height="65" key="GridCell.Tab.0.bottom" timestamp="1624134980638">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="400" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1623428755693" />
-    <state width="1323" height="400" key="GridCell.Tab.0.center" timestamp="1623428755693">
+    <state width="1323" height="65" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1624134980638" />
+    <state width="1323" height="65" key="GridCell.Tab.0.center" timestamp="1624134980637">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="400" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1623428755693" />
-    <state width="1323" height="400" key="GridCell.Tab.0.left" timestamp="1623428755693">
+    <state width="1323" height="65" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1624134980637" />
+    <state width="1323" height="65" key="GridCell.Tab.0.left" timestamp="1624134980637">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="400" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1623428755693" />
-    <state width="1323" height="400" key="GridCell.Tab.0.right" timestamp="1623428755693">
+    <state width="1323" height="65" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1624134980637" />
+    <state width="1323" height="65" key="GridCell.Tab.0.right" timestamp="1624134980638">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="400" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1623428755693" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1623406837313">
+    <state width="1323" height="65" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1624134980638" />
+    <state width="1323" height="65" key="GridCell.Tab.1.bottom" timestamp="1624134980638">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1623406837313" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1623406837313">
+    <state width="1323" height="65" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1624134980638" />
+    <state width="1323" height="65" key="GridCell.Tab.1.center" timestamp="1624134980638">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1623406837313" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1623406837313">
+    <state width="1323" height="65" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1624134980638" />
+    <state width="1323" height="65" key="GridCell.Tab.1.left" timestamp="1624134980638">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1623406837313" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1623406837313">
+    <state width="1323" height="65" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1624134980638" />
+    <state width="1323" height="65" key="GridCell.Tab.1.right" timestamp="1624134980638">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1623406837313" />
+    <state width="1323" height="65" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1624134980638" />
+    <state x="237" y="93" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1624130866041">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="237" y="93" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1366.728@0.0.1366.728" timestamp="1624130866041" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/noobchain$main.coverage" NAME="main Coverage Results" MODIFIED="1623427334235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/noobchain$main3.coverage" NAME="main3 Coverage Results" MODIFIED="1623428755682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/noobchain$main3.coverage" NAME="main3 Coverage Results" MODIFIED="1624130929834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/noobchain$db_init.coverage" NAME="db_init Coverage Results" MODIFIED="1623408411215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/noobchain$main2.coverage" NAME="main2 Coverage Results" MODIFIED="1623412508368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

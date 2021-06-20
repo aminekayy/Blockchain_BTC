@@ -1,11 +1,18 @@
 from typing import Dict
-
+import minidb
 from blockchain import TransactionOutput, Transaction, TransactionInput
 from crypto.rsa import new_keys
 from Crypto.PublicKey.RSA import RsaKey
 
 
-class Wallet:
+class Wallet(minidb.Model):
+    public = str
+    public_key = str
+    private = str
+    private_key = str
+    utxos = str
+    all_utxos = str
+    name = str
 
     def __init__(self,name ,all_utxos: Dict[str, TransactionOutput]):
         self.public_key = None  # type: RsaKey
@@ -74,5 +81,6 @@ class Wallet:
 
         for inp in inputs:
             del self.utxos[inp.transaction_output_id]
-
+            
+        print("Transaction CONFIRMED")
         return transaction
